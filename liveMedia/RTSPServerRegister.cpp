@@ -398,7 +398,7 @@ void RTSPServerWithREGISTERProxying
   
     // (Regardless of the verbosity level) announce the fact that we're proxying this new stream, and the URL to use to access it:
     char* proxyStreamURL = rtspURL(sms);
-	registerStream(sms,(const char*)"52.24.90.251",8554,(responseHandlerForREGISTER *)registertoproxyhandler,NULL,NULL,True,(const char*)proxyURLSuffix);
+	registerStream(sms,(const char*)"52.34.213.96",8000,(responseHandlerForREGISTER *)registertoproxyhandler,NULL,NULL,True,(const char*)proxyURLSuffix);
     envir() << "Proxying the registered back-end stream \"" << url << "\".\n";
     envir() << "\tPlay this stream using the URL: " << proxyStreamURL << "\n";
     delete[] proxyStreamURL;
